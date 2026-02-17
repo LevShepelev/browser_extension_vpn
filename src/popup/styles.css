@@ -1,0 +1,78 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #0f172a;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  background: #f8fafc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+input,
+select,
+textarea,
+button {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  cursor: pointer;
+  background: white;
+}
+
+button.success {
+  background: #16a34a;
+  border-color: #15803d;
+  color: white;
+}
+
+button.danger {
+  background: #dc2626;
+  border-color: #b91c1c;
+  color: white;
+}
+
+.status,
+.message {
+  margin: 0;
+  font-size: 12px;
+}
+
+.message {
+  color: #334155;
+  min-height: 16px;
+}
