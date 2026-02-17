@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Custom VPN Proxy Controller",
+  "version": "0.1.0",
+  "description": "Configure Chrome traffic through your own proxy/VPN gateway.",
+  "action": {
+    "default_title": "VPN Proxy",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "proxy",
+    "webRequest",
+    "webRequestAuthProvider"
+  ],
+  "host_permissions": ["<all_urls>"]
+}
